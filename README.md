@@ -2,7 +2,7 @@
 
 This Python script evaluates the performance of three stock price prediction models: LSTM, Random Forest, and Support Vector Regressor (SVR). It uses historical stock data, trains each model, generates predictions, evaluates them using Mean Squared Error (MSE) and R² Score, and saves the visualizations of predicted vs. actual prices.
 
-Features:
+# Features:
 
 -Supports multiple stock predictions.
 
@@ -13,7 +13,7 @@ Features:
 -Handles data preparation, model training, prediction, and evaluation in a single script.
 
 
-Dependencies:
+# Dependencies:
 
 -Python 3.x
 
@@ -29,7 +29,7 @@ Dependencies:
 
 WARNING! Tensorflow does NOT work on Python 3.6.4+. In order to run this program, you must downgrade.
 
-Usage:
+# Usage:
 
 Ensure stocks_data.csv is in the data/ folder.
 
