@@ -13,7 +13,7 @@ from src.randomForest import randomForest_train_predict
 from src.svr import svr_train_predict
 
 #1) IMPORTING DATA ----------------------------------------------------------------------
-data = pd.read_csv('/workspaces/stock-market-predictor/data/stocks_data.csv')
+data = pd.read_csv('/stock-market-predictor/data/stocks_data.csv')
 
 df = pd.DataFrame(data)
 
@@ -72,7 +72,7 @@ for stock in stocks: #Iterating over each stock to be predicted by each model
     plt.legend()
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
     plt.gca().xaxis.set_major_locator(mdates.YearLocator())
-    plt.savefig(os.path.join('/workspaces/stock-market-predictor/results/lstm_plots', f'{stock}_lstm.png'))
+    plt.savefig(os.path.join('/stock-market-predictor/results/lstm_plots', f'{stock}_lstm.png'))
     plt.close()
 
     # ---- Random Forest Model ----
@@ -92,7 +92,7 @@ for stock in stocks: #Iterating over each stock to be predicted by each model
     plt.legend()
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
     plt.gca().xaxis.set_major_locator(mdates.YearLocator())
-    plt.savefig(os.path.join('/workspaces/stock-market-predictor/results/randomForest_plots', f'{stock}_randomForest.png'))
+    plt.savefig(os.path.join('/stock-market-predictor/results/randomForest_plots', f'{stock}_randomForest.png'))
     plt.close()
 
     # ---- SVR (Support Vector Regressor) Model ----
@@ -112,7 +112,7 @@ for stock in stocks: #Iterating over each stock to be predicted by each model
     plt.legend()
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
     plt.gca().xaxis.set_major_locator(mdates.YearLocator())
-    plt.savefig(os.path.join('/workspaces/stock-market-predictor/results/svr_plots', f'{stock}_svr.png'))
+    plt.savefig(os.path.join('/stock-market-predictor/results/svr_plots', f'{stock}_svr.png'))
     plt.close()
 
 #4) PRINTING RESULTS --------------------------------------------------------------------
