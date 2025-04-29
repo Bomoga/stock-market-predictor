@@ -1,4 +1,4 @@
-# stock-market-predictor ai
+# stock-market-predictor-ai
 
 This Python script evaluates the performance of three stock price prediction models: LSTM, Random Forest, and Support Vector Regressor (SVR). It uses historical stock data, trains each model, generates predictions, evaluates them using Mean Squared Error (MSE) and R² Score, and saves the visualizations of predicted vs. actual prices.
 
