@@ -1,38 +1,33 @@
-# stock-market-predictor-ai
+# Stock Market Predictor AI
 
-This Python script evaluates the performance of three stock price prediction models: LSTM, Random Forest, and Support Vector Regressor (SVR). It uses historical stock data, trains each model, generates predictions, evaluates them using Mean Squared Error (MSE) and R² Score, and saves the visualizations of predicted vs. actual prices.
+A Python-based machine learning project that compares the performance of three predictive models—LSTM (Long Short-Term Memory), Random Forest Regressor, and Support Vector Regressor (SVR)—for forecasting stock prices using historical data.
 
-# Features:
+# Key Features
 
-Supports multiple stock predictions.
+Multi-Model Comparison: Trains and evaluates LSTM, Random Forest, and SVR models on historical stock data.
 
-Evaluates models based on R² Score and Mean Squared Error.
+Automated Pipeline: Handles data loading, preprocessing, model training, prediction, and evaluation within a single script.
 
-Visualizes and saves prediction results for each model and stock.
+Model Evaluation: Measures and compares performance using Mean Squared Error (MSE) and R² Score.
 
-Handles data preparation, model training, prediction, and evaluation in a single script.
+Data Visualization: Generates and saves line plots comparing predicted vs. actual stock prices for each model.
 
+Multi-Stock Support: Capable of evaluating multiple stocks in one run.
 
-# Dependencies:
+# Technologies Used
 
-Python 3.x
+Languages: Python 3.x
 
-numpy
+Libraries: NumPy, Pandas, Scikit-learn, Matplotlib, TensorFlow
 
-pandas
+⚠️ Note: For TensorFlow compatibility, Python version must be ≤ 3.6.3.
 
-scikit-learn
+# Usage Instructions
 
-matplotlib
+Place your dataset (stocks_data.csv) in the data/ directory.
 
-tensorflow
+Run the script:
+python evaluation.py
 
-WARNING! Tensorflow does NOT work on Python 3.6.4+. In order to run this program, you must downgrade.
-
-# Usage:
-
-Ensure stocks_data.csv is in the data/ folder.
-
-Run the script: python evaluation.py
-
-Evaluation metrics (MSE and R²) will be printed in the console. Prediction plots will be saved in the results/ directory.
+Model performance metrics (MSE and R²) will be printed to the console.
+Prediction visualizations will be saved in the results/ folder.
