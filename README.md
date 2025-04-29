@@ -4,28 +4,28 @@ This Python script evaluates the performance of three stock price prediction mod
 
 # Features:
 
--Supports multiple stock predictions.
+Supports multiple stock predictions.
 
--Evaluates models based on R² Score and Mean Squared Error.
+Evaluates models based on R² Score and Mean Squared Error.
 
--Visualizes and saves prediction results for each model and stock.
+Visualizes and saves prediction results for each model and stock.
 
--Handles data preparation, model training, prediction, and evaluation in a single script.
+Handles data preparation, model training, prediction, and evaluation in a single script.
 
 
 # Dependencies:
 
--Python 3.x
+Python 3.x
 
--numpy
+numpy
 
--pandas
+pandas
 
--scikit-learn
+scikit-learn
 
--matplotlib
+matplotlib
 
--tensorflow
+tensorflow
 
 WARNING! Tensorflow does NOT work on Python 3.6.4+. In order to run this program, you must downgrade.
 
